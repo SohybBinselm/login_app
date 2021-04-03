@@ -219,6 +219,7 @@ class _SignUpScreenState extends State<SignUpScreen>
               MyCustomInput(
                 labelText: 'Email',
                 textInputAction: TextInputAction.next,
+                inputType: TextInputType.emailAddress,
                 validator: validateEmail,
                 onSaved: (val) {
                   _authData['email'] = val;
@@ -410,7 +411,6 @@ class _SignUpScreenState extends State<SignUpScreen>
                                             textEditingController:
                                                 textEditingController,
                                             hintText: 'Address',
-                                            inputType: TextInputType.phone,
                                             validator: validateAddress,
                                             onChanged: (val) {
                                               if (validateAddress(val) == null)

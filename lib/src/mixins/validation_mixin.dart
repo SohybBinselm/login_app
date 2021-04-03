@@ -23,7 +23,7 @@ mixin ValidationMixin<T extends StatefulWidget> on State<T> {
 
   String validateEmail(String email) {
     if(!_email.hasMatch(email)) {
-      return 'Please enter a valid email';
+      return 'Please enter a valid email, E.G: test@test.com';
     } else return null;
   }
 
